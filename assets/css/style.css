@@ -89,10 +89,14 @@ html{
     width: 300px;
     background: #FFF;
     right: 20px;
-    bottom: 0px;
-    transition: all .8s cubic-bezier(.22, .67, .43, 1.22) .2s;
+    bottom: -360px;
+    transition: all .4s cubic-bezier(.22, .67, .43, 1.0) .2s;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.nb-form:hover {
+    bottom: 0px;
 }
 
 /*-- User Icon --*/
@@ -138,7 +142,7 @@ html{
 
 .nb-form input,
 .nb-form textarea {
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: inherit;
     font-size: 12px;
     width: 254px;
     max-width: 254px;
@@ -210,13 +214,10 @@ html{
     }
 
     .nb-form form {
-        padding-top: 15px;
+        display: none;
     }
     .nb-form{
-        right: 50%;
-        bottom: -320px;
-        left: 50%;
-        transform: translateX(-50%);
+        display: none;
     }
 }
 
@@ -1251,7 +1252,7 @@ html{
 
 @media (min-width: 576px) {
   .clean-block {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .clean-block .block-heading {
     padding-top: 80px;
