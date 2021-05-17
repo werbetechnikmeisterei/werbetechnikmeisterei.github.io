@@ -35,28 +35,32 @@
     <main class="page landing-page">
         <div class="container">
 	       <div class="row">
-
+            </div>
 		          <!-- Form -->
                     <div class="nb-form">
                         <p class="title">Schreiben Sie uns!</p>
                         <img src="assets/img/bau/logo-bison-small-bgw.jpg" alt="" class="user-icon">
-                        <p class="message">Wir freuen uns über Ihre Nachricht</p>
+                        <p>Wir freuen uns über Ihre Nachricht</p>
 
-                        <form>
-                          <input type="text" name="cpname" placeholder="Ihr Name" required>
-                          <input type="email" name="cpemail" placeholder="Ihre Email" required>
-                          <input type="tel" name="cpphone" placeholder="Telefon" required>
-                          <textarea name="cpmessage" placeholder="Nachricht" required></textarea>
-                          <input type="submit" value="Senden">
+                        <form id="contact-form1" method="post" action="contact-1.php" role="form"><div class="messages1"></div>
+                          <input id="form_name" type="text" name="name1" class="form-control" placeholder="Vorname" required="required" >
+                          <input id="form_lastname" type="text" name="surname1" class="form-control" placeholder="Nachname" required="required" >
+                          <input id="form_email" type="email" name="email1" class="form-control" placeholder="Email" required="required" >
+                          <input id="form_phone" type="tel" name="phone1" class="form-control" placeholder="Telefon" >
+                          <textarea id="form_message" name="message1" class="form-control" placeholder="Nachricht" rows="6" required="required" ></textarea>
+                          <input type="submit" class="btn btn-lg btn-primary btn-send" value="Senden">
                         </form>
-                        </div>
+                        
+                        
+                        
                     </div>
                 </div>		
         <!-- Page Top -->
         <section class="clean-block clean-hero parallax-bg" style="background-image:url(&quot;assets/img/bau/Schreinerarbeit1.jpg&quot;);color:rgba(220, 44, 29, 0.00);" id="page-top" alt="Innenausbau">
             <div class="text">
                 <h1 class="text font-weight-bold">Wir sind IR Bison Bau.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p><button class="btn btn-primary btn-lg" type="button">Mehr erfahren</button></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                <a class="btn btn-primary btn-lg" href="#clean-services" role="button">Mehr erfahren</a></div>
         </section>
         
 
@@ -202,21 +206,65 @@
                         <h2 class="text-info">Kontaktieren Sie uns!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                     </div>
-                    <form>
-                        <div class="form-group"><label>Name</label><input class="form-control" type="text"></div>
-                        <div class="form-group"><label>Subject</label><input class="form-control" type="text"></div>
-                        <div class="form-group"><label>Email</label><input class="form-control" type="text"></div>
-                        <div class="form-group"><label>Message</label><textarea class="form-control"></textarea></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block" type="button">Send</button></div>
+                        <div class="" id="form_container">
+                    
+                    <form id="contact-form" method="post" action="contact-2.php" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Vorname</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Nachname</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Telefon</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="" data-error="Bitte geben Sie Ihre Telefonnummer an!">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Nachricht</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="required" ></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-12"><br><br>
+                                    <input type="submit" class="btn btn-lg btn-primary btn-send" value="Senden">
+                                </div>
+                                <br>
+                            </div>
+                            
+                        </div>
                     </form>
+                            
+                </div>
                     </div>
                     <div class="col-sm">
                         <div class="block-heading">
                         <h2 class="text-info">Besuchen Sie uns!</h2>
-                        <p>Adresse 123<br>Straßenstreet 5<br>77899 Stadt<br></p>
+                        <p>IR Bison Bau<br>Kenzinger Weg 5<br>79362 Forchheim<br></p>
                     </div>
                         <div class="map-responsive block-heading">
-                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Kenzinger+Weg+5+79362+Forchheim" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -236,17 +284,14 @@
                         <h3>Ein Familienunternehmen.</h3>
                         <div class="getting-started-info">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div><button class="btn btn-outline-primary btn-lg" type="button">Schreiben Sie uns!</button></div>
+                        </div>
+                        <a class="btn btn-primary btn-lg" href="#contact" role="button">Schreiben Sie uns!</a></div>
                 </div>
             </div>
         </section>
         
-        
     </main>
 
-<div class="container-fluid">
-    
-</div>
     
     <!-- Footer-->
     <footer class="page-footer dark">
@@ -255,24 +300,24 @@
                 <div class="col-sm-4">
                     <h5>Kontakt</h5>
                     <ul>
-                        <li><p style="color:#d2d1d1; margin-bottom:0">Tel.: 02929293848</p></li>
-                        <li><p style="color:#d2d1d1; margin-bottom:0">Tel. Mobil: 029394885</p></li>
-                        <li><p style="color:#d2d1d1; margin-bottom:0">Email: bison@bison.de</p></li>
+                        <li><p style="color:#d2d1d1; margin-bottom:0">Tel.: 07642 926 771 7</p></li>
+                        <li><p style="color:#d2d1d1; margin-bottom:0">Tel. Mobil: 0176 961 283 01</p></li>
+                        <li><p style="color:#d2d1d1; margin-bottom:0">Email: info@ir-bison-bau.de</p></li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <h5>Adresse</h5>
                     <ul>
-                        <li><p style="color:#d2d1d1; margin-bottom:0">Straße 123</p></li>
-                        <li><p style="color:#d2d1d1; margin-bottom:0">Stadt 38838</p></li>
+                        <li><p style="color:#d2d1d1; margin-bottom:0">Kenzinger Weg 5</p></li>
+                        <li><p style="color:#d2d1d1; margin-bottom:0">79362 Forchheim</p></li>
                         <li><p style="color:#d2d1d1; margin-bottom:0">Deutschland</p></li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <h5>Rechtliches</h5>
                     <ul>
-                        <li><a href="#">Impressum</a></li>
-                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
                 </div>
             </div>
@@ -280,14 +325,20 @@
         <div class="footer-copyright">
             <p><a href="https://werbetechnikmeisterei.de">© 2021 Werbetechnikmeisterei - Webdesigner und Code: Michael Hurst</a> &middot; 
                 <!-- Link back to the template is required under the license terms -->
-                <a href="https://github.com/bootstrapstudio/clean-sky-template">Gemacht mit Clean Sky für Bootstrap</a>
+                <a href="https://github.com/bootstrapstudio/clean-sky-template">Erstellt mit Clean Sky für Bootstrap</a>
             </p>
         </div>
     </footer>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="assets/js/script.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script src="contact-2.js"></script>
+        <script src="contact-1.js"></script>
     
     <!-- START Bootstrap-Cookie-Alert -->
     <div class="alert text-center cookiealert" role="alert">
