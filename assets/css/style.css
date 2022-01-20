@@ -16,7 +16,7 @@ html{
   height: 100%; 
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ html{
   height: 100%; 
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,6 +357,10 @@ html{
 /* Features block */
 .feature-box {
   padding: 15px 20px 15px 70px;
+}
+
+.feature-box2 {
+  padding: 175px 20px 15px 70px;
 }
 
 .feature-box .icon {
