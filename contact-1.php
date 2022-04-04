@@ -14,7 +14,7 @@ $fromEmail = 'info@ir-bison-bau.de';
 
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'iinfo@ir-bison-bau.de';
+$sendToEmail = 'info@ir-bison-bau.de';
 
 
 // subject of the email
